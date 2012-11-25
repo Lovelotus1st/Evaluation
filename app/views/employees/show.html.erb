@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name of employee:</b>
+  <%= @employee.Name_of_Employee %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @employee.Position %>
+</p>
+
+<p>
+  <b>Job specification:</b>
+  <%= @employee.Job_Specification %>
+</p>
+
+<p>
+  <b>Technical skills:</b>
+  <%= @employee.Technical_skills %>
+</p>
+
+<p>
+  <b>Leadership abilities:</b>
+  <%= @employee.Leadership_Abilities %>
+</p>
+
+<p>
+  <b>Time management skill:</b>
+  <%= @employee.Time_Management_skill %>
+</p>
+
+<p>
+  <b>Willing to train others:</b>
+  <%= @employee.Willing_to_train_others %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

@@ -1,0 +1,43 @@
+<h1>Listing templetes</h1>
+
+<table>
+  <tr>
+    <th>Evaluating field</th>
+    <th>Query no 1</th>
+    <th>Query no 2</th>
+    <th>Query no 3</th>
+    <th>Query no 4</th>
+    <th>Query no 5</th>
+    <th>Query no 6</th>
+    <th>Query no 7</th>
+    <th>Query no 8</th>
+    <th>Query no 9</th>
+    <th>Query no 10</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @templetes.each do |templete| %>
+  <tr>
+    <td><%= templete.Evaluating_field %></td>
+    <td><%= templete.Query_No_1 %></td>
+    <td><%= templete.Query_No_2 %></td>
+    <td><%= templete.Query_No_3 %></td>
+    <td><%= templete.Query_No_4 %></td>
+    <td><%= templete.Query_No_5 %></td>
+    <td><%= templete.Query_No_6 %></td>
+    <td><%= templete.Query_No_7 %></td>
+    <td><%= templete.Query_No_8 %></td>
+    <td><%= templete.Query_No_9 %></td>
+    <td><%= templete.Query_No_10 %></td>
+    <td><%= link_to 'Show', templete %></td>
+    <td><%= link_to 'Edit', edit_templete_path(templete) %></td>
+    <td><%= link_to 'Destroy', templete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Templete', new_templete_path %>

@@ -1,0 +1,54 @@
+<%= form_for(@course) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name_of_the_Course %><br />
+    <%= f.text_field :course %>
+  </div>
+  <div class="field">
+    <%= f.label :Reason_to_take_this_course %><br />
+    <%= f.text_field :Reason %>
+  </div>
+  <div class="field">
+    <%= f.label :Expected_grade_in_this_Course %><br />
+    
+    <%= f.text_field :grade %>
+				 
+  </div>
+  <div class="field">
+    <%= f.label :Current_level_in_School%><br />
+        <%= f.select:Status, Course::RATE_LEVEL,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="field">
+    <%= f.label :Your_Major_area %><br />
+    <%= f.text_field :major %>
+  </div>
+  <div class="field">
+    <%= f.label :Current_GPA %><br />
+    <%= f.text_field :gpa %>
+  </div>
+  <div class="field">
+    <%= f.label :Satisfied_with_knowledge_of_instructor %><br />
+    <%= f.select:inst_knowledge, Course::RATE_TYPES,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="field">
+    <%= f.label :Instructor_was_well_Prepared_for_this_course %><br />
+    <%= f.select:inst_prep, Course::RATE_TYPES,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

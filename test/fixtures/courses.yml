@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  course: MyString
+  Reason: MyString
+  grade: MyString
+  Status: MyString
+  major: MyString
+  gpa: 9.99
+  inst_knowledge: MyString
+  inst_prep: MyString
+
+two:
+  course: MyString
+  Reason: MyString
+  grade: MyString
+  Status: MyString
+  major: MyString
+  gpa: 9.99
+  inst_knowledge: MyString
+  inst_prep: MyString

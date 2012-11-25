@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name_of_Employee: MyString
+  Position: MyString
+  Job_Specification: MyString
+  Technical_skills: MyString
+  Leadership_Abilities: MyString
+  Time_Management_skill: MyString
+  Willing_to_train_others: MyString
+
+two:
+  Name_of_Employee: MyString
+  Position: MyString
+  Job_Specification: MyString
+  Technical_skills: MyString
+  Leadership_Abilities: MyString
+  Time_Management_skill: MyString
+  Willing_to_train_others: MyString

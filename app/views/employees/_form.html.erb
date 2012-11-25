@@ -1,0 +1,49 @@
+<%= form_for(@employee) do |f| %>
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% @employee.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name_of_Employee %><br />
+    <%= f.text_field :Name_of_Employee %>
+  </div>
+  <div class="field">
+    <%= f.label :Position %><br />
+    <%= f.text_field :Position %>
+  </div>
+  <div class="field">
+    <%= f.label :Job_Specification %><br />
+    <%= f.text_field :Job_Specification %>
+  </div>
+  <div class="field">
+    <%= f.label :Technical_skills %><br />
+    <%= f.select:Technical_skills, Employee::RATE_TYPES,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="field">
+    <%= f.label :Leadership_Abilities %><br />
+    <%= f.select:Leadership_Abilities, Employee::RATE_TYPES,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="field">
+    <%= f.label :Time_Management_skill %><br />
+    <%= f.select:Time_Management_skill, Employee::RATE_TYPES,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="field">
+    <%= f.label :Willing_to_train_others %><br />
+    <%= f.select:Willing_to_train_others, Employee::RATE_TYPES,
+    			:prompt => 'Select' %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
