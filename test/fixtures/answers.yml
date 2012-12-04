@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Evaluating_field: MyString
+  Query_No_1: MyString
+  Query_No_2: MyString
+  Query_No_3: MyString
+  Query_No_4: MyString
+  Query_No_5: MyString
+  Query_No_6: MyString
+  Query_No_7: MyString
+  Query_No_8: MyString
+  Query_No_9: MyString
+  Query_No_10: MyString
+
+two:
+  Evaluating_field: MyString
+  Query_No_1: MyString
+  Query_No_2: MyString
+  Query_No_3: MyString
+  Query_No_4: MyString
+  Query_No_5: MyString
+  Query_No_6: MyString
+  Query_No_7: MyString
+  Query_No_8: MyString
+  Query_No_9: MyString
+  Query_No_10: MyString

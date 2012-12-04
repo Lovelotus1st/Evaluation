@@ -1,6 +1,16 @@
 class TempletesController < ApplicationController
   # GET /templetes
   # GET /templetes.json
+  #----------------------------------------------------------------
+    def answer
+    @answers = Answer.all
+        respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @templetes }
+    end
+    end 
+  #----------------------------------------------------------------
+
   def index
     @templetes = Templete.all
 

@@ -1,0 +1,31 @@
+<h1>Existing Templetes</h1>
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<h4>*<%= link_to 'Course Evaluation', new_course_path %></h4>
+<h4>*<%= link_to 'Employee Evaluation', new_employee_path %></h4>
+
+
+
+<% @templetes.each do |templete| %>
+  <p>Evaluate: <%=link_to templete.Evaluating_field, templete %></p>
+<% end %>
+
+
+
+
+<br/>
+<p>Didn't find the topic of your choice You can still:
+<h5><%= link_to 'Create your own', new_templete_path %></h5>
+</p>
+<br/>
+<p><b>*</b> These are Administrative approved templetes and rest are user created templetes</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>Find me in app/views/static_pages/course.html.erb</p>

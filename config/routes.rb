@@ -1,4 +1,16 @@
 Prof::Application.routes.draw do
+  resources :answers
+
+  get "static_pages/course"
+
+  get "static_pages/university"
+
+  get "static_pages/sports"
+
+  get "static_pages/help"
+
+  resources :users
+
   resources :templetes
 
   resources :employees
@@ -6,6 +18,8 @@ Prof::Application.routes.draw do
   get "evaluation/index"
 
   resources :courses
+  
+  get "static_pages/home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -64,4 +78,7 @@ Prof::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   root :to => 'evaluation#index', :as => 'evaluation'
+  #-------------------------
+  match ':permalink', :controller => 'pages', :action => 'show', :as => 'my_page'
+  #----------------------------
 end

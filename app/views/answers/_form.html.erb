@@ -1,0 +1,61 @@
+<%= form_for(@answer) do |f| %>
+  <% if @answer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
+
+      <ul>
+      <% @answer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Evaluating_field %><br />
+    <%= f.text_field :Evaluating_field %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_1 %><br />
+    <%= f.text_field :Query_No_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_2 %><br />
+    <%= f.text_field :Query_No_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_3 %><br />
+    <%= f.text_field :Query_No_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_4 %><br />
+    <%= f.text_field :Query_No_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_5 %><br />
+    <%= f.text_field :Query_No_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_6 %><br />
+    <%= f.text_field :Query_No_6 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_7 %><br />
+    <%= f.text_field :Query_No_7 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_8 %><br />
+    <%= f.text_field :Query_No_8 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_9 %><br />
+    <%= f.text_field :Query_No_9 %>
+  </div>
+  <div class="field">
+    <%= f.label :Query_No_10 %><br />
+    <%= f.text_field :Query_No_10 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

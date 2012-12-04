@@ -36,7 +36,8 @@
   </div>
   <div class="field">
     <%= f.label :Current_GPA %><br />
-    <%= f.text_field :gpa %>
+    <%= f.select:gpa, Course::GPA,
+    			:prompt => 'Select' %>
   </div>
   <div class="field">
     <%= f.label :Satisfied_with_knowledge_of_instructor %><br />

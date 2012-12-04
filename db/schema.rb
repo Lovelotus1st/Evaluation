@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121124220750) do
+ActiveRecord::Schema.define(:version => 20121127212729) do
+
+  create_table "answers", :force => true do |t|
+    t.string   "Evaluating_field"
+    t.string   "Query_No_1"
+    t.string   "Query_No_2"
+    t.string   "Query_No_3"
+    t.string   "Query_No_4"
+    t.string   "Query_No_5"
+    t.string   "Query_No_6"
+    t.string   "Query_No_7"
+    t.string   "Query_No_8"
+    t.string   "Query_No_9"
+    t.string   "Query_No_10"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "courses", :force => true do |t|
     t.string   "course"
@@ -52,6 +68,15 @@ ActiveRecord::Schema.define(:version => 20121124220750) do
     t.string   "Query_No_10"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.string   "password_confirmation"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
 end
